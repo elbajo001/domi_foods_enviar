@@ -1,0 +1,13 @@
+<h1>All products here</h1>
+{% for product in product_list %}
+    <ul>
+        <li>Product: {{ product.name }}</li>
+        <li>Price: {{ product.description }}</li>
+        <li>Description: {{ product.description }}</li>
+        <li>
+            <img style="width: 50px; height: 50px" src="/media/{{ product.image.name }}" alt="">
+        </li>
+        <li>Category: {{ product.category.name }}</li>
+        <li>Restaurant: {{ product.restaurant }}</li>
+    </ul>
+{% endfor %}
